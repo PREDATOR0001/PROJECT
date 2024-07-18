@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #333;
+    text-align: center; /* added this to center all content */
+}
+
+.inner {
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: -150%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 145px;
+    background-color: #2ecc71;
+}
+
+.container {
+    display: grid;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-box {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-title {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.skill-title:hover {
+    transform: scale(1,1);
+    color:#2eafcc;
+}
+
+.skill-title h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.skill-title h3:hover {
+    transform: scale(1.1);
+    color: #2eafcc;
+}
+
+.skill-icon {
+    width: 100px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+}
+
+.skill-description {
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.skill-description p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skill-description p:hover {
+    color: #2ecc71;
+    text-decoration: underline;
+}
